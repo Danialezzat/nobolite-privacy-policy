@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nobolite Support</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #090b15;
+        --panel: rgba(17, 21, 35, 0.88);
+        --panel-border: rgba(255, 255, 255, 0.08);
+        --text: #f5f7ff;
+        --muted: #abb3ca;
+        --accent: #78a4ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(84, 112, 214, 0.14), transparent 28%),
+          linear-gradient(180deg, #090b15 0%, #0c1020 100%);
+        color: var(--text);
+      }
+
+      main {
+        width: min(960px, calc(100% - 28px));
+        margin: 0 auto;
+        padding: 36px 0 72px;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        margin-bottom: 22px;
+        flex-wrap: wrap;
+      }
+
+      .back {
+        color: var(--muted);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .meta {
+        color: #7f88a6;
+        font-size: 0.95rem;
+      }
+
+      .hero,
+      .content {
+        background: var(--panel);
+        border: 1px solid var(--panel-border);
+        border-radius: 28px;
+        backdrop-filter: blur(18px);
+        box-shadow: 0 22px 60px rgba(0, 0, 0, 0.2);
+      }
+
+      .hero {
+        padding: 36px 32px;
+        margin-bottom: 18px;
+      }
+
+      .content {
+        padding: 8px 32px 10px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 12px;
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.1rem, 4vw, 3.35rem);
+        letter-spacing: -0.045em;
+      }
+
+      .summary {
+        max-width: 740px;
+        margin-top: 16px;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.8;
+      }
+
+      section {
+        padding: 24px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+      }
+
+      section:first-child {
+        border-top: 0;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 1.4rem;
+        letter-spacing: -0.03em;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        line-height: 1.82;
+        font-size: 1rem;
+      }
+
+      ul {
+        margin: 12px 0 0;
+        padding-left: 20px;
+      }
+
+      .contact {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="topbar">
+        <a class="back" href="./nobolite-index.html">&larr; Back</a>
+        <div class="meta">Last updated: April 25, 2026</div>
+      </div>
+
+      <article class="hero">
+        <span class="eyebrow">Nobolite</span>
+        <h1>Support</h1>
+        <p class="summary">
+          If you need help with account access, profile settings, rankings, comments, moderation, or account deletion,
+          this page tells you how to reach us and what to expect.
+        </p>
+      </article>
+
+      <article class="content">
+        <section>
+          <h2>How to Reach Us</h2>
+          <p>For support requests, email us at:</p>
+          <a class="contact" href="mailto:support@nobolite.com">support@nobolite.com</a>
+          <p>If you plan to publish with a different support email, replace this address before deployment.</p>
+        </section>
+
+        <section>
+          <h2>Common Support Topics</h2>
+          <ul>
+            <li>OTP login or verification issues</li>
+            <li>Forgot password and account recovery</li>
+            <li>Profile image or profile information updates</li>
+            <li>Comment, reply, hide, or delete behavior</li>
+            <li>Followers, rankings, and community pulse questions</li>
+            <li>Account disable or account deletion requests</li>
+            <li>Privacy or data-related requests</li>
+            <li>Bug reports and app performance issues</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>What to Include in Your Email</h2>
+          <p>To help us resolve your issue faster, include:</p>
+          <ul>
+            <li>your Nobolite email address or public handle;</li>
+            <li>your device type and operating system if the issue is technical;</li>
+            <li>a short description of the issue;</li>
+            <li>screenshots if relevant; and</li>
+            <li>the steps you took before the issue happened.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Response Time</h2>
+          <p>
+            We aim to respond to most support requests within 2 to 5 business days. Response times may vary depending
+            on request volume, account verification needs, and the complexity of the issue.
+          </p>
+        </section>
+
+        <section>
+          <h2>Account and Safety Requests</h2>
+          <p>
+            If your request relates to account access, account deletion, impersonation, abuse, or safety concerns, we
+            may ask you to verify your identity before completing the request. This helps us protect user accounts and
+            prevent unauthorized actions.
+          </p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
