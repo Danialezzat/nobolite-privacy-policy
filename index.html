@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nobolite Legal & Support</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #090b15;
+        --panel: rgba(17, 21, 35, 0.86);
+        --panel-border: rgba(255, 255, 255, 0.08);
+        --text: #f5f7ff;
+        --muted: #a6aec7;
+        --accent: #78a4ff;
+        --accent-strong: #4b78ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(84, 112, 214, 0.16), transparent 32%),
+          linear-gradient(180deg, #090b15 0%, #0d1020 100%);
+        color: var(--text);
+      }
+
+      main {
+        width: min(960px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 56px 0 72px;
+      }
+
+      .hero {
+        text-align: center;
+        margin-bottom: 36px;
+      }
+
+      .mark {
+        width: 104px;
+        height: 104px;
+        margin: 0 auto 18px;
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
+      }
+
+      .mark img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.25rem, 4vw, 3.5rem);
+        letter-spacing: -0.04em;
+      }
+
+      .subtitle {
+        max-width: 620px;
+        margin: 16px auto 0;
+        color: var(--muted);
+        font-size: 1.125rem;
+        line-height: 1.7;
+      }
+
+      .grid {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--panel-border);
+        border-radius: 28px;
+        padding: 28px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 22px 60px rgba(0, 0, 0, 0.18);
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 12px;
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 1.55rem;
+        letter-spacing: -0.03em;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
+      .actions {
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0 20px;
+        border-radius: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+      }
+
+      .button.primary {
+        background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+        color: #ffffff;
+        box-shadow: 0 14px 30px rgba(75, 120, 255, 0.26);
+      }
+
+      .button.secondary {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        color: var(--text);
+      }
+
+      .button:hover {
+        transform: translateY(-1px);
+      }
+
+      footer {
+        margin-top: 28px;
+        text-align: center;
+        color: #7f88a6;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="mark">
+          <img src="../apps/mobile/assets/icon.png" alt="Nobolite logo" />
+        </div>
+        <h1>Nobolite</h1>
+        <p class="subtitle">
+          Reputation speaks. We make it visible. This page provides the privacy and support information required for
+          app store distribution and user trust.
+        </p>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <span class="eyebrow">Privacy</span>
+          <h2>Privacy Policy</h2>
+          <p>
+            A complete privacy policy covering account data, profile content, uploads, community interactions,
+            communications, security, data retention, and user rights.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="./nobolite-privacy-policy.html">Open Privacy Policy</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="eyebrow">Support</span>
+          <h2>Support & Contact</h2>
+          <p>
+            Support information for login issues, profile updates, moderation questions, account actions, and general
+            help for Nobolite users.
+          </p>
+          <div class="actions">
+            <a class="button secondary" href="./nobolite-support.html">Open Support Page</a>
+          </div>
+        </article>
+      </section>
+
+      <footer>Last updated: April 25, 2026</footer>
+    </main>
+  </body>
+</html>
